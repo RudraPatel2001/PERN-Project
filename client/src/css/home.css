@@ -1,0 +1,106 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    border-bottom: 1px solid rgb(44, 185, 138);
+    height: calc(100vh - 60px);
+    background: url('../images/wave5.svg') no-repeat fixed center right;
+    background-size: cover;
+}
+
+.home .containText {
+    width: 55%;
+}
+
+.home .containBtns {
+    display: flex;
+    margin-top: 22px;
+    padding: 0 24px;
+}
+.home .containBtns a {
+    all: unset;
+    position: relative;
+    margin-right: 15px;
+    border-radius: 4px;
+    padding: 8.5px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    background-color: #123456;
+    z-index: 1;
+    transition: 0.2s all;
+}
+.home .containBtns a:hover {
+    transform: scale(1.075);
+}
+
+.home .head {
+    font-size: 48px;
+    padding: 0 24px;
+    margin-bottom: 17.5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: rgb(44, 185, 138);
+    text-underline-offset: 15.5px;
+}
+.home .des {
+    margin-top: 2.5px;
+    font-size: 24px;
+    padding: 0 24px;
+}
+
+@keyframes morph {
+    0%, 100% {
+        border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    }
+    33% {
+        border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+    }
+    66% {
+        border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+    }
+}
+
+.blob {
+    overflow: hidden;
+    width: 16rem;
+    height: 16rem;
+    min-width: 16rem;
+    /* margin-right: 24px; */
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    background: #8f44fd url('../images/logo.svg');
+    background-size: cover;
+    background-position: center;
+    animation: morph 3s linear infinite;
+}
+
+@media (max-width: 800px) {
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .blob {
+        height: 12rem;
+        width: 12rem;
+        min-width: 12rem;
+        margin-bottom: 30px;
+    }
+    .home .head {
+        padding: 0;
+        margin: 0 24px 24px 24px;
+        font-size: 32px;
+    }
+    .home .des {
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.25;
+    }
+    .home .containText {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

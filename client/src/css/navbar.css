@@ -1,0 +1,127 @@
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #123456;
+    padding: 0 8px;
+    z-index: 5;
+}
+
+nav div {
+    display: flex;
+    margin-right: 20px;
+}
+
+nav a {
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    padding: 5px 6px;
+    margin-right: 4px;
+    color: white;
+    font-size: 18px;
+    transition: 0.25s;
+}
+
+nav .first {
+    border: none;
+    transform: scale(1.1);
+    padding: 0;
+    margin-left: 8px;
+}
+
+nav .first img {
+    animation: rotation 3s infinite linear;
+}
+
+nav .first img:hover {
+    animation: rotation 0.5s infinite linear;
+}
+
+nav div a:hover {
+    background-color: #63b890;
+    border-radius: 4px;
+    color: #212529;
+}
+
+nav .ham {
+    height: 25px;
+    display: none;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+@keyframes tgdown {
+    0% {
+        left: 100%;
+    }
+    100% {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@keyframes tgup {
+    0% {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes rotateHam {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(180deg);}
+}
+
+@media (max-width: 600px) {
+    nav .togup {
+        left: 100%;
+        overflow: hidden;
+        animation: tgdown 0.25s ease-in-out;
+    }
+
+    nav .togdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #212529;
+        margin: 0;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        animation: tgup 0.25s ease-in-out;
+    }
+
+    nav div a {
+        width: 50%;
+        margin-top: 15px;
+    }
+    nav .ham {
+        display: block;
+    }
+}

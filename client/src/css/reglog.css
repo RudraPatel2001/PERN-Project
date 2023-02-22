@@ -1,0 +1,305 @@
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* place-items: center; */
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+}
+/* .noDisp {
+    display: none;
+}
+.success, .failure {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 7.5px 12.5px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+.success {
+    background-color: green;
+}
+.failure {
+    background-color: red;
+} */
+
+.containLogin {
+    width: 100%;
+}
+
+.containLogin h2 {
+    margin: 0 auto;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 0;
+    margin-top: 17.5px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.containLogin p {
+    margin-top: 0px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.contain {
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contain .box {
+    width: 48.5%;
+}
+
+.contain .box .title {
+    font-size: 20px;
+    color: #414141;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 1px solid #e7e4e4;
+}
+
+.contain .box .des {
+    font-size: 15px;
+    color: #838383;
+    margin: 20px 0;
+}
+
+.contain .box .points {
+    font-size: 15px;
+    color: #212121;
+}
+
+.contain .box .points .pt {
+    margin-bottom: 15px;
+}
+
+.contain .box a {
+    background-color: #123456;
+    height: 45px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    margin-top: 165px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain .box a:hover {
+    background-color: #f12933;
+}
+
+.contain .box form {
+    display: grid;
+}
+
+.contain .box form .loginInput {
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #212121;
+}
+
+.contain .box form input {
+    margin-bottom: 40px;
+    height: 40px;
+    max-width: 75%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.contain .box form button {
+    margin-top: 15px;
+    height: 45px;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #123456;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contain .box form button:hover {
+    background-color: #f12933;
+}
+
+/* Register */
+
+.wrapReg {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+}
+
+.register {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.register h2 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 0;
+    margin-top: 17.5px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.register p {
+    margin-top: 0px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.register .personalInfo {
+    width: 100%;
+}
+
+.register .personalInfo .flex {
+    width: 100%;
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.register .personalInfo .flex .name {
+    width: 48.75%;
+}
+
+.register .personalInfo .name:nth-child(3) {
+    width: 100%;
+}
+
+.register .personalInfo .flex .name:nth-child(1) {
+    margin-right: 2.5%;
+}
+
+.register .personalInfo input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #333;
+    border: 1px solid #cacaca;
+    padding: 0 15px !important;
+    font-size: 16px;
+    min-width: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+}
+
+.register .personalInfo p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10.5px;
+}
+
+.register .btn {
+    display: inline-flex;
+    height: 45px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: 0;
+    outline: 0;
+    background-color: #0b2e58;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-top: 25px;
+}
+
+.register .btn:hover {
+    background-color: #f12933;
+}
+
+.btnFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnFlex a {
+    background-color: #123456;
+    height: 45px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7.5px;
+}
+
+.btnFlex a:hover {
+    background-color: #f12933;
+}
+
+.profile {
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile .des {
+    font-size: 32px;
+    color: #212529;
+    margin-bottom: 20px;
+}
+.profile a {
+    text-decoration: none;
+    height: 35px;
+    width: 100px;
+    padding: 5px 8px;
+    cursor: pointer;
+    background-color: #123456;
+    color: white;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    transition: 0.25s all;
+}
+
+.profile a:hover {
+    background-color: #cc1240;
+}

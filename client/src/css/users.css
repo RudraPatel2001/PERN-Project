@@ -1,0 +1,64 @@
+.users {
+    display: grid;
+    justify-items: center;
+    margin-top: 60px;
+}
+.table {
+    display: grid;
+    justify-items: center;
+    height: 425px;
+    overflow-y: scroll;
+    width: fit-content;
+    padding: 10px;
+    /* border-radius: 4px; */
+}
+table, th, tr, td {
+    border: 1px solid black;
+    border-radius: 2px;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 3px 8px;
+    letter-spacing: 1px;
+}
+
+td button {
+    all: unset;
+    padding: 4px 12px;
+    background-color: #cc1240;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.25s all;
+}
+
+td button:hover {
+    background-color: #00b7ff;
+}
+
+.users .containHeaders {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.users .head {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 32px;
+}
+
+.users .goback {
+    all: unset;
+    padding: 7.5px 12px;
+    background-color: #123456;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.25s all;
+}
+
+.users .goback:hover {
+    background-color: #cc1240;
+}

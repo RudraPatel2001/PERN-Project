@@ -1,0 +1,226 @@
+.proContainer {
+  margin-top: 60px;
+  display: grid;
+  justify-content: center;
+}
+
+.proHead {
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 0 8px 0;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-color: rgb(44, 185, 138);
+}
+  
+.gridContainer {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 30px;
+    column-gap: 15px;
+    margin: auto;
+    width: fit-content;
+    padding: 35px 20px;
+}
+  
+.gridContainer .gridBox {
+    width: 228px;
+    display: grid;
+    border: 1px solid #cacaca;
+    border-radius: 12px;
+    overflow: hidden;
+}
+  
+.gridContainer .gridBox img {
+    width: 228px;
+    height: 188.5px;
+    z-index: -1;
+}
+  
+.gridContainer .gridBox .boxDetails {
+    width: 208px;
+    padding: 18px 10px;
+}
+  
+.gridContainer .gridBox .boxDetails .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #414141;
+}
+  
+.gridContainer .gridBox .boxDetails .category {
+    font-size: 14px;
+    color: #818181;
+    margin-bottom: 12px;
+}
+  
+.gridContainer .gridBox .boxDetails .prodDes {
+    font-size: 16px;
+    color: #474747;
+    margin-bottom: 18px;
+}
+  
+.gridContainer .gridBox .boxDetails .discount {
+    color: #757575;
+}
+  
+.gridContainer .gridBox .boxDetails .discount span {
+    color: #509e2f;
+    font-weight: bold;
+}
+  
+.gridContainer .gridBox .boxDetails .price {
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+  
+.gridContainer .gridBox .boxDetails .wrapBtns {
+    display: flex;
+}
+  
+.gridContainer .gridBox .boxDetails .wrapBtns #rem, #add {
+    margin: 0 4px;
+}
+  
+.gridContainer .gridBox .boxDetails .addToCart {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #327ae6;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.gridContainer .gridBox .boxDetails .addToCart:hover {
+    background-color: #2343ac;
+}
+.payContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+.cart .payBtn, .viewInvoice {
+    all: unset;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #123456;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.35s;
+    position: relative;
+    margin: 0 5px;
+}
+
+.cart .payBtn:hover, .viewInvoice:hover {
+    background-color: #dd833d;
+}
+  
+.cart .totprice {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.filter {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.filter div input {
+  width: 200px;
+  height: 40px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #cacaca;
+  outline: none;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.filter select {
+  /* all: unset; */
+  height: 40px;
+  margin-right: 10px;
+  background-color: #123456;
+  color: white;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* .filter div button {
+  min-width: 80px;
+  height: 40px;
+  padding: 0 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: #0b2e58;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  letter-spacing: 1px;
+  font-size: 16px;
+  transition: 0.3s all;
+}
+.filter div button:nth-child(3) {
+  margin-right: 20px;
+}
+.filter div button:hover {
+  background-color: #327ae6;
+} */
+
+@media (max-width: 1200px) {
+  .gridContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 775px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cart .payBtn, .viewInvoice {
+    font-size: 16px;
+  }
+  .cart .totprice {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .payContainer {
+    display: grid;
+    justify-content: center;
+  }
+  .cart .totprice {
+    margin: 2px 0;
+  }
+  .cart .payBtn, .viewInvoice {
+    margin-top: 12px;
+    text-align: center;
+  }
+}

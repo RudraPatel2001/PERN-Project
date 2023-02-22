@@ -1,0 +1,34 @@
+.container {
+    background-color: #212529;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    font-family : sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.statusCode {
+    font-size: 60px;
+}
+.statusMsg {
+    font-size: 32px;
+}
+.return {
+    margin-top: 35px;
+}
+.return button {
+    all: unset;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: 0.3s all;
+}
+.return button:hover {
+    color: #cc1240;
+    border: 1px solid #cc1240;
+}
